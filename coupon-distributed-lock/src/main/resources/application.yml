@@ -1,0 +1,9 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: coupon-distributed-lock
+  data:
+    redis:
+      host: localhost
+      port: 6384

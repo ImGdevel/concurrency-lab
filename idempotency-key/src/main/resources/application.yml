@@ -1,0 +1,9 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: idempotency-key
+  data:
+    redis:
+      host: localhost
+      port: 6387

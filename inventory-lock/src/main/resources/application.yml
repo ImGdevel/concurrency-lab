@@ -1,0 +1,21 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: inventory-lock
+  data:
+    redis:
+      host: localhost
+      port: 6386
+  datasource:
+    url: jdbc:mysql://localhost:3316/inventory_lock?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: lab
+    password: lab1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

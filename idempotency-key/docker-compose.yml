@@ -1,0 +1,6 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: idempotency-key-redis
+    ports:
+      - "6387:6379"

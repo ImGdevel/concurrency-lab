@@ -1,0 +1,16 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: outbox-pattern-redis
+    ports:
+      - "6388:6379"
+  mysql:
+    image: mysql:8.0
+    container_name: outbox-pattern-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: outbox_pattern
+      MYSQL_USER: lab
+      MYSQL_PASSWORD: lab1234
+    ports:
+      - "3318:3306"
