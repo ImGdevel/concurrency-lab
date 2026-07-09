@@ -7,3 +7,7 @@ spring:
     redis:
       host: localhost
       port: 6381
+
+queue:
+  enter-threshold: 100
+  session-ttl-seconds: 600
